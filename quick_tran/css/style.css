@@ -1,0 +1,15 @@
+#louis_pop{
+    padding: 10px 10px 5px 20px;
+    opacity: 0.80;
+    display: none;
+    z-index: 999999;
+    border: #ACACAC solid 1px;
+    position: absolute;
+    background-color: white;
+    border-radius: 0px 15px;
+    max-width: 300px;
+    text-align: left;
+}
+.additional{
+    padding-top: 8px;
+}

@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Quick Translation",
+  "version": "0.9.9",
+  "description": "Quick Translation",
+  "browser_action": {
+    "default_icon": "icon68.jpg" ,
+    "default_title": "Quick Translation",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+  "icons": {
+    "128": "icon68.jpg",
+    "16": "icon68.jpg",
+    "48": "icon48.jpg"
+  },
+  "content_scripts": [ {
+      "all_frames": true,
+      "css": [ "css/style.css" ],
+      "js": [ "js/jquery.js", "js/qt_scripts.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_end"
+   } ]
+}
